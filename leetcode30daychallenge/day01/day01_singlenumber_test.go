@@ -1,4 +1,4 @@
-package leetcode30daychallenge
+package day01
 
 import "testing"
 
