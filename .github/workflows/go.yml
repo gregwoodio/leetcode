@@ -27,9 +27,4 @@ jobs:
     - name: Test
       run: |
         go test -v -short -coverprofile="cover.out" ./...
-        go tool cover -html cover.html
-    - name: Upload coverage report
-      uses: actions/upload-artifact@v1
-      with: 
-        name: coverage
-        path: cover.html
+        go tool cover -html cover.out
